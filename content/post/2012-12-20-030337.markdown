@@ -1,0 +1,33 @@
+---
+
+title: "inotify-toolsをUbuntuにインストール"
+date: 2012-10-20
+comments: true
+tags: ["Ubuntu"]
+---
+ファイルの監視をするために[inotify-tools](https://github.com/rvoicilas/inotify-tools/)をインストールしてみました。
+
+<!--more-->
+
+### インストール
+```bash
+$ sudo aptitude install inotify-tools
+```
+
+Ubuntu以外のインストール方法は[こちら](https://github.com/rvoicilas/inotify-tools/wiki)
+
+### 使ってみる
+
+```bash
+$ inotifywait ~/inotify-test & # inotify-testフォルダをバックグラウンドで監視
+$ touch ~/inotify-test/test # 適当にファイルを作成
+    # initify-test CREATE test
+
+$ inotifywait ~/inotify-test & # inotify-testフォルダを再度バックグラウンドで監視
+$ echo test > inotify-test/test # ファイルを編集
+    # inotify-test/ OPEN,ISDIR
+```
+
+こんな感じでDropboxのようにファイルに変更等があった場合のイベントを取得できます。
+
+

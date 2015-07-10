@@ -1,0 +1,37 @@
+---
+
+title: "BLINK(1)を買いました。"
+date: 2013-01-26
+comments: true
+tags: ["BLINK(1)"]
+---
+買ったのはこれ
+[BLINK(1), THE WORLD'S BEST INDICATOR LIGHT](http://thingm.com/products/blink-1.html)
+
+<!--more-->
+
+昨年末に見た[Gigazin](http://gigazine.net/news/20121224-blink1/)の記事で気になったので注文しました。
+光でお知らせしてくれるガジェットです。
+
+光らせてみるとこんな感じ
+
+
+![blink1_Blue](https://lh3.googleusercontent.com/-EwyRhhgULWM/UQOXKeKWf-I/AAAAAAAAAD4/reNeBijWtf0/s288/2013-01-26%252017.22.48.jpg)
+
+![blink1_Red](https://lh6.googleusercontent.com/-DvCkN2-6Q2o/UQOXLfNpOQI/AAAAAAAAAEI/fKN7uqYDPpc/s288/2013-01-26%252017.33.00.jpg)
+
+![blink1_Yellow](https://lh3.googleusercontent.com/-A7imBrf6fms/UQOXKdquO9I/AAAAAAAAAD0/C1AtNFcxQLI/s288/2013-01-26%252017.19.16.jpg)
+
+![blink1_Purpule](https://lh4.googleusercontent.com/-GCpMTj33f74/UQOXLdGHv0I/AAAAAAAAAEE/Yckr5EixrlI/s288/2013-01-26%252017.32.38.jpg)
+
+
+他に約500色を表現できるみたいです。
+
+[IFTTT](https://ifttt.com/recipes?channel=blink1&sort=hot)と連携できるので、メール(Gmail)が届いた時やSNSに連絡が来た場合に光らせることができます。
+
+ただし、PCの電源が切れていたりスタンバイになっていると光りません。
+
+勢いで買ったから、何に使うか全く考えていませんが。
+面白いことができるように考えてみます。
+
+

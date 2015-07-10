@@ -1,0 +1,23 @@
+---
+
+title: "ICSでのフォント変更方法"
+date: 2012-02-25
+comments: true
+tags: ["Android"]
+---
+**`要root`**
+
+<!--more-->
+
++ /system/fontsにファイルを置く
++ /system/etc/fallback_fonts.xmlに追加
+
+```
+<family>
+    <fileset>
+       <file>DroidSansJapanese.ttf</file>
+    </fileset>
+ </family>
+```
+
+**`DroidSansFallbackより前に書くこと`**

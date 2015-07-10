@@ -1,0 +1,25 @@
+---
+
+title: "Nexus SをFactoryImageで初期化する"
+date: 2012-08-26
+comments: true
+tags: ["NexusS"]
+---
+いつもやり方をわすれるのでメモ
+
+<!--more-->
+
+### 初期化
+
+1. FactoryImageのダウンロード
+    + [ここ](https://developers.google.com/android/nexus/images)からリカバリをダウンロードする
+2. リカバリモードで起動
+    + adb reboot bootloader
+3. イメージを焼く
+    + ダウンロードしたファイルの中にflash-all.shがあるからをそれを実行
+
+### CWR
+
+```
+$ fastboot flash recovery recovery-clockwork-x.x.x-xxxxzz.img
+```

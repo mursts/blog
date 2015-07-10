@@ -1,0 +1,24 @@
+---
+
+title: "vimコマンドでMacVimを開く"
+date: 2012-11-03
+comments: true
+tags: ["Vim"]
+---
+いつも忘れて調べているのでメモ
+
+<!--more-->
+
+### mvimコマンドをダウンロード
+```bash
+$ wget http://repo.or.cz/w/MacVim/KaoriYa.git/blob_plain/HEAD:/src/MacVim/mvim ~/bin/mvim
+$ chmod 0755 ~/bin/mvim
+```
+
+### aliasを設定
+.bashrcなどに追加
+
+```bash
+#常に新規タブで開く
+alias vim="mvim --remote-tab-silent"
+```

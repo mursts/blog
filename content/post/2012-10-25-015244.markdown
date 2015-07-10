@@ -1,0 +1,81 @@
+---
+
+title: "watchdogでファイル監視してみた"
+date: 2012-10-25
+comments: true
+tags: ["Python"]
+---
+[前回の記事](http://blog.mursts.jp/entry/2012/10/20/030337)でUbuntuにinotify-toolsをインストールしてファイル監視をしようとしたけれど、MacやWindowsでもできるようにPythonモジュールのwatchdogを使ってファイルの監視をやってみました。  
+((inotify-toolsはOSXにもインストールできるかもしれないけど調べていない))
+
+<!--more-->
+
+### watchdogのインストール
+```bash
+$ pip install watchdog
+```
+
+インストールにはlibyamlが必要みたいです。
+
+```bash
+$ sudo aptitude install libyaml-dev # Ubuntuの場合
+$ brew install libyaml # Mac OS XでHomebrewを使用の場合
+```
+
+### サンプル
+ホームディレクトリを監視する
+
+```python
+#!/usr/bin/env python
+# coding:utf-8
+ 
+import os
+import time
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+ 
+class EventHandler(FileSystemEventHandler):
+    def on_created(self, event):
+        if event.is_directory:
+            print 'directory \'{0}\' created.'.format(event.src_path)
+        else:
+            print 'file \'{0}\' created.'.format(event.src_path)
+ 
+    def on_modified(self, event):
+        if event.is_directory:
+            print 'directory \'{0}\' modified.'.format(event.src_path)
+        else:
+            print 'file \'{0}\' modified.'.format(event.src_path)
+        
+    def on_deleted(self, event):
+        if event.is_directory:
+            print 'directory \'{0}\' deleted.'.format(event.src_path)
+        else:
+            print 'file \'{0}\' deleted.'.format(event.src_path)
+ 
+ 
+def main():
+    watch_dir = os.environ['HOME']
+ 
+    event_handler = EventHandler()
+    observer = Observer()
+    observer.schedule(event_handler, watch_dir)
+    observer.start()
+ 
+    try:
+        while True:
+            time.sleep(10)
+    except (Exception, KeyboardInterrupt):
+        observer.stop()
+    observer.join()
+ 
+if __name__ == '__main__':
+    main()
+```
+
+[公式サンプル](http://packages.python.org/watchdog/quickstart.html#a-simple-example)のイベントハンドラだけを変えて作ってみました。
+
+ファイルを作成するとon_created(ファイル作成)とon_modified(ディレクトリの変更)が動くようで、
+on_createdだけが動くわけではないみたいです。
+
+

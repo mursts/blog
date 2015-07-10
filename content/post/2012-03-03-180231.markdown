@@ -1,0 +1,46 @@
+---
+
+title: "DownloadManagerを使ってみた"
+date: 2012-03-03
+comments: true
+tags: ["Android"]
+---
+Androidのアプリで画像やファイルをダウンロードする時は、HttpURLConnectionやDefaultHttpClientを使っていたけど、Android2.3.1(APIレベル9)からDownloadManagerというAPIができたので使ってみた。
+
+<!--more-->
+
+### 以下最低限動くサンプル
+
+```java
+private void download() {
+    String url = "http://developer.android.com/assets/images/home/ics-android.png"
+    
+    String sdcardPath = Environment.getExternalStorageDirectory().getPath();
+    String dirName = "DownloadTest";
+
+    File file = new File(sdcardPath, dirName);
+    if(!file.exists())file.mkdirs();
+    
+    Request r = new Request(Uri.parse(url));
+    r.setDestinationInExternalPublicDir(dirName, System.currentTimeMillis() + ".png");
+    r.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_MOBILE | DownloadManager.Request.NETWORK_WIFI);
+    mManager.enqueue(r);
+}
+```
+
+これを実行すると、/SDカードのパス/DownloadTestにファイルがダウンロードされる。
+
+setDestinationInExternalPublicDirの代わりにsetDestinationInExternalFilesDirを使うとダウンロード先が/SDカードのパス/Android/data/package名/files/DownloadTestになる    
+setAllowedNetworkTypesは3GかWifiか両方かを指定する。
+
+BroadcastReceiverを登録するとダウンロード完了時や通知領域タップ時の処理を指定できる。
+
+あと、ネットワークに繋いでSDカードにダウンロードするから、AndroidManifest.xmlに
+
++ android.permission.INTERNET
++ android.permission.WRITE_EXTERNAL_STORAGE
+
+が必要
+
+
+

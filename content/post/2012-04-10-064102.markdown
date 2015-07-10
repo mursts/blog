@@ -1,0 +1,16 @@
+---
+
+title: "Pythonでユニットテストをやってみた"
+date: 2012-04-10
+comments: true
+tags: ["Python"]
+---
+以前書いた[Base58Encode](http://blog.mursts.jp/entry/2012/03/30/151733)のテストをnoseを使ってやってみました。
+
+<!--more-->
+
+ソースはgithubにおいてあります。  
+[https://github.com/mursts/py-base58encode](https://github.com/mursts/py-base58encode)
+
+今回テストを書いて不具合がみつかったり、仕様をこうした方がいいなど改善点がいくつかみつかりました。  
+こんなに簡単にテストが書けるならもっと早く始めればよかったという印象です。

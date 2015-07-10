@@ -1,0 +1,12 @@
+---
+
+title: "mp3gainのオプション"
+date: 2012-02-23
+comments: true
+tags: ["Mp3Gain"]
+---
+いつも忘れるので。
+
+```bash
+$ mp3gain -r -c -p xxx.mp3
+```

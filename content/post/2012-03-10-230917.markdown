@@ -1,0 +1,31 @@
+---
+
+title: "requestsモジュールで並列ダウンロード"
+date: 2012-03-10
+comments: true
+tags: ["Python"]
+---
+[http://d.hatena.ne.jp/heavenshell/20120304/1330869594](http://d.hatena.ne.jp/heavenshell/20120304/1330869594)の記事を見てrequestsモジュールで並列ダウンロードができることを知りました。
+
+<!--more-->
+
+早速使ってみると
+
+```
+Traceback (most recent call last):
+  File "test.py", line 9, in <module>
+    from requests import async
+  File "/Users/xxxxx/.pythonbrew/pythons/Python-2.7.2/lib/python2.7/site-packages/requests/async.py", line 17, in <module>
+    raise RuntimeError('Gevent is required for requests.async.')
+RuntimeError: Gevent is required for requests.async.
+```
+
+とエラーになった。  
+Geventが必要とのことでhomebrewでlibevent、pipでgeventをインストール
+
+```bash
+$ brew install libevent
+$ pip install gevent
+```
+
+これで並列ダウンロードができました。

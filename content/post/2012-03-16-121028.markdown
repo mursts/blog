@@ -1,0 +1,46 @@
+---
+
+title: "PythonでRSSをパース"
+date: 2012-03-16
+comments: true
+tags: ["Python"]
+---
+最初はlibxml2やminidomを使ってやってたけど、feedparserというモジュールを使ってみたら簡単にできました。
+
+<!--more-->
+
+### feedparserインストール
+
+```
+$ pip install feedparser
+```
+
+### ソース
+
+```python
+#!/usr/bin/env python
+# -*- condign:utf-8 -*-
+ 
+import requests
+import feedparser
+ 
+def main():
+    node_list = [
+        lambda x: ('title', x.title),
+        lambda x: ('link', x.link),
+        lambda x: ('date', x.updated),
+        lambda x: ('guid', x.id),
+        lambda x: ('creator', x.author),
+        lambda x: ('thumbnail', x.media_thumbnail[0]['url']),
+        lambda x: ('content', x.media_content[0]['url']),
+        lambda x: ('discription', x.summary),
+    ]
+ 
+    url = 'http://matome.naver.jp/feed/matome/2124527773893944885'
+    rss = requests.get(url).content
+    entries = feedparser.parse(rss)['entries']
+    items = [dict([f(entry) for f in node_list]) for entry in entries]
+ 
+if __name__ == '__main__':main()
+```
+

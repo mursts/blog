@@ -1,0 +1,23 @@
+---
+
+title: "Time Machineのバックアップ間隔を変更する"
+date: 2012-04-14
+comments: true
+tags: ["Mac"]
+---
+自宅のMac miniをTime Machineでバックアップするようにしました。  
+しかし、1時間に1回バックアップしていて、ハードディクスにやさしくないのでバックアップの間隔を変更しました。
+
+<!--more-->
+
+変更方法は、  
+/System/Library/LaunchDaemons/com.apple.backupd-auto.plist  
+を編集してやればいいようです。
+
+> \# sudo vi /System/Library/LaunchDaemons/com.apple.backup-auto.plist  
+> で com.apple.backup-auto.plist を開き、  
+> \<key\>StartInterval\</key\>   
+> \<integer\>3600\</integer\>  
+> の部分を変更します。  
+
+[Mac Time Machine のバックアップ頻度を変更する - 僕は発展途上技術者](http://blog.champierre.com/945)

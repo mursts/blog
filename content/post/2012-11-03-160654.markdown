@@ -1,0 +1,77 @@
+---
+
+title: "DropboxのCamera Uploadsにアップロードされた写真・動画を自動で振り分けるようにした"
+date: 2012-11-03
+comments: true
+tags: ["Dropbox", "Python"]
+---
+Dropboxのカメラアップロード機能はすごく便利だけれど、全てのファイルが同じフォルダにアップロードされてしまうので、
+写真が多くなると目的のファイルを探すのに苦労します。
+
+なので、アップロードされたファイルを自動で日付フォルダに振り分けるスクリプトを作りました。
+
+<!--more-->
+
+```python
+#!/usr/bin/env python
+# coding:utf-8
+
+import os
+import time
+import re
+import shutil
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+
+WATCH_DIR = os.path.join(os.environ['HOME'], "Dropbox/Camera Uploads/")
+FILENAME_MATCHER = re.compile('/([\d]{4}-[\d]{2})-([\d]{2}).*\.(jpg|png|mp4)$')
+
+
+def move_file(src):
+    try:
+        if not os.path.exists(src):
+            return
+
+        m = FILENAME_MATCHER.search(src)
+
+        if m:
+            save_dir_name = m.group(1)
+            save_dir = os.path.join(WATCH_DIR, save_dir_name)
+
+            if not os.path.exists(save_dir):
+                os.makedirs(save_dir, 0755)
+            shutil.move(src, save_dir)
+    except Exception:
+        pass
+
+
+class EventHandler(FileSystemEventHandler):
+    def on_created(self, event):
+        move_file(event.src_path)
+
+    def on_modified(self, event):
+        move_file(event.src_path)
+
+
+def main():
+    event_handler = EventHandler()
+    observer = Observer()
+    observer.schedule(event_handler, WATCH_DIR)
+    observer.start()
+
+    try:
+        while True:
+            time.sleep(10)
+    except (Exception, KeyboardInterrupt):
+        observer.stop()
+    observer.join()
+
+if __name__ == '__main__':
+    main()
+```
+
+[前回](http://blog.mursts.jp/entry/2012/10/25/015244)使ってみたPythonモジュールのwatchdogを使用しています。
+
+Dropboxをインストールしたサーバで動かしておけば、アップロードの度にフォルダに振り分けれます。
+
+[CentOSにDropboxをインストール](http://blog.mursts.jp/entry/2012/02/21/145948)

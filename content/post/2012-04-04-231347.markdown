@@ -1,0 +1,17 @@
+---
+
+title: "AndroidエミュレータからAppEngineの開発用サーバにアクセスする"
+date: 2012-04-04
+comments: true
+tags: ["Android", "AppEngine"]
+---
+AndroidエミュレータからAppEngineのローカルサーバに繋いだら、何度やってもConnectExceptionが発生してつなぐことができなかった。  
+調べてみると、サーバを立ち上げる時にエミュレータを起動しているPCのIPを設定する必要があるようです。  
+
+<!--more-->
+
+```bash
+$ dev_appserver.py -a IPアドレス sample_app
+```
+
+コマンドラインで以外にも、ランチャーからも指定ができるみたい。

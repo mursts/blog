@@ -1,0 +1,66 @@
+---
+
+title: "CentOSにDropboxをインストール"
+date: 2012-02-21
+comments: true
+tags: ["Dropbox", "CentOS"]
+---
+[Install Dropbox via command line](https://www.dropbox.com/install?os=lnx)
+
+<!--more-->
+
+### 環境
+
+```bash
+$ cat /etc/redhat-release
+CentOS release 5.7 (Final)
+
+$ uname -a
+Linux dti-vps-srv-32 2.6.18-194.3.1.el5.028stab069.6 #1 SMP Wed May 26 18:31:05 MSD 2010 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+### Python26をインストール
+
+```bash
+$ sudo yum install python26
+```
+
+### ソースをダウンロード
+
+```bash
+$ wget -O - http://www.dropbox.com/download?plat=lnx.x86_64 | tar xzf -
+```
+
+### Dropboxのデーモンを実行
+
+```bash
+$ ~/.dropbox-dist/dropboxd
+```
+
+デーモンを実行するとアカウントにリンクするためのURLが表示されるからブラウザで表示してログインする。
+
+### 操作用のコマンドをダウンロード
+
+```bash
+$ mkdir ~/bin #パスが通っているところにダウンロード
+$ cd ~/bin
+$ wget -O dropbox.py https://www.dropbox.com/download?dl=packages/dropbox.py
+$ chmod u+x dropbox.py
+
+$ vi dropbox.py
+1行目を変更する
+--> #!/usr/bin/pythonを#!/usr/bin/python26
+```
+
+### 起動
+
+```bash
+$ dropbox.py start
+```
+
+### LAN接続時の同期をOFF
+
+```bash
+$ dropbox.py lansync n
+```
+

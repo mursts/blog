@@ -1,0 +1,21 @@
+---
+
+title: "MacOSでさくらインターネットのVNCコンソールが開かない場合"
+date: 2012-07-07
+comments: true
+tags: ["VPS"]
+---
+さくらのVPSを借りてカスタムOSのUbuntu 12.04をインストールしようとしたけど、一向にVNCコンソールが開きません。
+
+<!--more-->
+
+Chrome、Safari、Sleipnirでやってみたけどすべてだめ。
+JREもちゃんとインストールされている。
+
+調べたら、Java PreferenceというのがあるというのがわかりFinderのUtilitiesからJava Preference.appを開いたら、アプレットプラグインを有効にするというチェックがありました。
+
+![](http://cdn-ak.f.st-hatena.com/images/fotolife/m/mursts/20120707/20120707150522.jpg)
+
+これにチェックをいれたらVNCコンソールが開き、Ubuntuを入れることができました。
+
+

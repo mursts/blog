@@ -1,0 +1,67 @@
+---
+
+title: "Antdoidのプロジェクトをantでビルドしてみた"
+date: 2012-03-25
+comments: true
+tags: ["Android"]
+---
+### プロジェクト作成
+ここではeclipseで「HelloAnt」プロジェクトを作成
+
+<!--more-->
+
+### build.xmlを作成
+androidコマンドで作成する
+
+```
+$ android update project -p /path/to/project
+```
+
+androidコマンドはtoolsの下にあります。
+
+コマンド実行後2ファイルが作成されビルドの準備が完了
+
++ build.xml
++ local.properties
+
+### デバッグビルド
+
+```
+$ ant build
+```
+
+これだけで、binディレクトリの中にHelloAntActivity-debug.apkができます
+
+### リリースビルド(未署名)
+
+```
+$ ant release
+```
+
+未署名のHelloAntActivity-release-unsigned.apkができます
+
+### リリースビルド(署名あり)
+
+ant.propertiesを作成する
+
+```
+key.store=keystoreファイル名
+key.store.password=パスワード
+key.alias=エイリアス名
+key.alias.password=エイリアスパスワード
+```
+
+keystoreファイルはホームディレクトリにあるので、「~/xxx.keystore」としていたけど、プロジェクトホームの下にないとだめっぽいので、シンボリックリンクを張りました。  
+ant.propertiesを作ったらコマンド実行
+
+```
+$ ant release
+```
+
+今度は「HelloAntActivity-release.apk」ができます  
+
+### apkファイルの名前を変える
+
+build.xmlのprojectタグのname属性を変える  
+デフォルトは「{プロジェクト名}Activity」になっている
+

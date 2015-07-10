@@ -1,0 +1,33 @@
+---
+
+title: "PythonでMemcached"
+date: 2012-03-21
+comments: true
+tags: ["Python", "Memcached", "CentOS"]
+---
+### memcachedをインストール
+
+<!--more-->
+
+```bash
+$ sudo yum install memcached
+```
+
+### Pythonから使えるようにモジュールをインストール
+
+```bash
+$ pip install python-memcached
+```
+
+### 動作確認
+
+```python
+>>> import memcache
+>>> m = memcache.Client(['localhost:11211'])
+>>> m.set('key', 'value')
+True
+>>> m.get('key')
+'value'
+```
+
+こんな感じで簡単に使うことができました。

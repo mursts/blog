@@ -1,0 +1,44 @@
+---
+
+title: "InputStreamをStringに変換する"
+date: 2012-03-01
+comments: true
+tags: ["Java"]
+---
+いつも忘れるからメモ
+
+<!--more-->
+
+### 改行を無視する
+
+```java
+public String convertString(InputStream is) 
+        throws IOException {
+    BufferedReader reader = 
+        new BufferedReader(new InputStreamReader(is, "UTF-8"));
+    StringBuilder sb = new StringBuilder();
+    String line;
+    while (null != (line = reader.readLine())) {
+        sb.append(line);
+    }
+    return sb.toString();
+}
+```
+
+### 改行も含める
+
+```java
+public String convertString(InputStream is)
+        throws IOException {
+    BufferedReader reader =
+        new BufferedReader(new InputStreamReader(is, "UTF-8"));
+    StringBuilder sb = new StringBuilder();
+    char[] b = new char[1024];
+    int line;
+    while (0 <= (line = reader.read(b))) {
+        sb.append(b, 0, line);
+    }
+    return sb.toString();
+}
+```
+

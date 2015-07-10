@@ -1,0 +1,32 @@
+---
+
+title: "NexusSをrsyncを使ってバックアップ"
+date: 2012-03-07
+comments: true
+tags: ["NexusS"]
+---
+使っている携帯(NexusS)はメモリカードが使えないため、バックアップはPCに繋いで手動でコピーしてる。  
+毎度cpコマンドで全ファイルをコピーしていると、同期が取れないのでrsyncを使ってバックアップするようにしました。
+
+<!--more-->
+
+以下コマンド  
+
+```bash
+$ rsync -aIvn --exclude-from excludefile バックアップ元DIR バックアップ先DIR
+$ rsync -aIv --exclude-from excludefile バックアップ元DIR バックアップ先DIR
+```
+
+### オプションの説明
+
++ n
+    + コピーは実行しないで更新するファイルの一覧を表示する
++ a
+    + 再帰でコピーしたりパーミッションやファイル更新日そのままでバックアップ
++ l
+    + ファイルサイズや更新日時が同じなら無視する
++ v
+    + コピーするフィアルを標準出力に表示
++ exclude-from
+    + excludefileで指定されたディレクトリを無視する
+

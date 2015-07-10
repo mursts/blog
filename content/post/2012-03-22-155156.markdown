@@ -1,0 +1,61 @@
+---
+
+title: "Pythonで花粉データを取得"
+date: 2012-03-22
+comments: true
+tags: ["Python"]
+---
+Openpearで公開されているServices_HanakoをPythonで書いてみました。  
+[http://openpear.org/package/Services_Hanako](http://openpear.org/package/Services_Hanako)
+
+<!--more-->
+
+```python
+#!/usr/bin/env python
+# coding:utf-8
+
+import re
+import requests
+
+class Hanako:
+    COOKIE_URL = 'http://kafun.taiki.go.jp/Hyou0.aspx?MstCode={0}&AreaCode={1}'
+    INFO_URL = 'http://kafun.taiki.go.jp/Hyou2.aspx'
+
+    def __init__(self, area_code, mst_code):
+        self._area_code = area_code
+        self._mst_code = mst_code
+        self._info = []
+        self._get_info()
+
+    def _get_info(self):
+        url = self.COOKIE_URL.format(self._mst_code, self._area_code)
+        cookie = self._send_request(url).cookies
+        content = self._send_request(self.INFO_URL, cookie).content
+        matcher = re.compile(r'<td><font size="2">(?P<hour>[^<]*)</font></td><td align="Right"><font size="2">(?P<pollen>[^<]*)</font></td><td align="Right"><font size="2">(?P<wd>[^<]*)</font></td><td align="Right"><font size="2">(?P<ws>[^<]*)</font></td><td align="Right"><font size="2">(?P<temp>[^<]*)</font></td><td align="Right"><font size="2">(?P<prec>[^<]*)</font></td><td align="Right"><font size="2">(?P<prec_bool>[^<]*)</font></td>')
+        self._info = [m.groupdict() for m in matcher.finditer(content)]
+
+    def _send_request(self, url, cookie=None):
+        r = requests.get(url, cookies=cookie)
+        if r.status_code != 200:
+            raise Exception(u'HTTP status is ' + r.status_code)
+        return r
+
+    def get(self, hour):
+        if 1 > hour or 24 < hour:
+            raise ValueError('Hour is betweet 1 and 24')
+        if hour > len(self._info):
+            raise Exception(u'That time is not measured')
+        return self._info[hour - 1]
+
+    def now(self):
+        return self.get(len(self._info))
+
+    def today(self):
+        return self._info
+
+if __name__ == '__main__':
+    hanako = Hanako('05', '52310100')
+    print hanako.now() #最新のデータ
+    print hanako.get(10) #10時のデータ
+    print hanako.today() #今日のデータ全て
+```

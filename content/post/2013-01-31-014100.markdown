@@ -1,0 +1,33 @@
+---
+
+title: "美女？をEvernoteにクリップする"
+date: 2013-01-31
+comments: true
+tags: ["Python", "Evernote"]
+---
+美女？をEvernoteにクリップするdocomoのキャンペーンで1年間無料でプレミアム会員になりました。  
+これを機会に使ってみようと、Evernoteの使い方を調べていたら以下の記事が。
+
+<!--more-->
+
+[Evernoteで本格的にニヤニヤする方法](http://ozpa-h4.com/2011/02/24/girl/)
+
+APIもあるので、ものは試しと似たようなことを自動で実現するスクリプトをかいてみました。  
+その日の[美女暦](http://www.bijogoyomi.com/)の写真をEvernoteにクリップするだけの単純なものです。
+
+こんな感じ  
+![](https://lh5.googleusercontent.com/-7NAfZie7BCQ/UQlIZWqqXrI/AAAAAAAAAFQ/eU3ocWhhueM/s288/%25E3%2582%25B9%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%25B3%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%2583%25E3%2583%2588%25202013-01-31%25201.19.47.png)  
+![](https://lh5.googleusercontent.com/-Stdz1pzyQzo/UQlL5ONzIPI/AAAAAAAAAGA/i0iDQcs4DGo/s288/%25E3%2582%25B9%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%25B3%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%2583%25E3%2583%2588%25202013-01-31%25201.35.03.png)
+
+
+クリップする美女はここから。  
+
+
+こんなしょうもない誰得スクリプトでも、StringIOやPILのを覚えて勉強になりました。
+
+スクリプトのソースはGithubにあります。  
+[BijoNote](https://github.com/mursts/BijoNote)
+
+cronなどで1日1回実行すると。その日の画像をクリップできます。
+
+

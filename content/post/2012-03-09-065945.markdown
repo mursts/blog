@@ -1,0 +1,36 @@
+---
+
+title: "libxml2-pythonをインストール"
+date: 2012-03-09
+comments: true
+tags: ["Python"]
+---
+CentoOS上のPython2.7(pythonbrewで入れた)でlibxml2を使うためにインストールしました。
+
+<!--more-->
+
+```bash
+$ sudo yum install libxml2-python
+```
+
+しかし、yumで入れると初期でインストールしてあるPython2.4の方にインストールされる。pipで入れようととしたらパッケージがないといわれエラーになった。
+
+```bash
+$ pip install libxml2-python
+Downloading/unpacking libxml2-python
+  Could not find any downloads that satisfy the requirement libxml2-python
+No distributions at all found for libxml2-python
+Storing complete log in /home/xxxxx/.pip/pip.log
+```
+
+困ったときの[stackoverflow](http://stackoverflow.com/questions/3856468/how-to-install-libxml2-in-virtualenv)
+
+最終的に
+
+```bash
+pip install http://xmlsoft.org/sources/python/libxml2-python-2.6.21.tar.gz
+```
+
+でインストールできました。
+
+
