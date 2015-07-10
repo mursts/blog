@@ -1,3 +1,32 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "http://blog.mursts.jp/"
+languageCode = "ja"
+title = ">> work.log"
+tags = "tags"
+theme = "vienna"
+Copyright = "&copy; 2011 mursts"
+
+DisqusShortname = "worklog"
+
+[permalinks]
+    post = "/entry/:year/:month/:day/:slug/"
+
+[params]
+    twitter = "mursts"
+    github = "mursts"
+    linkedin = ""
+    googleplus = ""
+    facebook = ""
+    stackoverflow = ""
+    # Google Analytics API key.
+    ga_api_key = "UA-39930558-1"
+    # Mixpanel API key.
+    mixpanel_api_key = ""
+    author = "@mursts"
+    avatar = "/mursts.jpg"
+    contact = ""
+    bio = "愛知で働く派遣プログラマ。Python東海の運営に関わっています"
+    # Short subtitle/tagline. This is displayed in the header.
+    subtitle = "チラ裏です"
+    themecolor = "#hexcolor" # Defines the tab color in Chrome for Android.
+    authorwebsite = "http://mursts.jp"
+
