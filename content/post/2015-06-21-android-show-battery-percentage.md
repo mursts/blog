@@ -1,6 +1,6 @@
 +++
 date = "2015-06-21T02:44:52+09:00"
-draft = true
+slug = "android-show-battery-percentage"
 title = "Androidのバッテリー残量をパーセンテージで表示する"
 tags = ["Android"]
 +++
