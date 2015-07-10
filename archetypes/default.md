@@ -1,0 +1,6 @@
++++
+date = ""
+slug = ""
+title = ""
+tags = [""]
++++
