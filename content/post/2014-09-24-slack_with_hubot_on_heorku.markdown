@@ -8,9 +8,7 @@ tags: ["Slack", "Hubot", "Heroku"]
 
 [前回](http://blog.mursts.jp/2014/09/19/start_hubot_on_mac.html) の続き
 
-## 参考サイト
-
-[https://github.com/tinyspeck/hubot-slack](https://github.com/tinyspeck/hubot-slack)
+参考サイト:[https://github.com/tinyspeck/hubot-slack](https://github.com/tinyspeck/hubot-slack)
 
 <!--more-->
 

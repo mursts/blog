@@ -1,16 +1,19 @@
----
++++
+date = "2012-03-25T23:18:41+09:00"
+slug = "build-android-project"
+tags = ["Android"]
+title = "Androidのプロジェクトをantでビルドしてみた"
++++
 
-title: "Antdoidのプロジェクトをantでビルドしてみた"
-date: 2012-03-25
-comments: true
-tags: ["Android"]
----
-### プロジェクト作成
-ここではeclipseで「HelloAnt」プロジェクトを作成
+Antでビルド→apk作成をやってみました。
 
 <!--more-->
 
-### build.xmlを作成
+## プロジェクト作成
+
+ここではeclipseで「HelloAnt」プロジェクトを作成
+
+## build.xmlを作成
 androidコマンドで作成する
 
 ```
@@ -24,7 +27,7 @@ androidコマンドはtoolsの下にあります。
 + build.xml
 + local.properties
 
-### デバッグビルド
+## デバッグビルド
 
 ```
 $ ant build
@@ -32,7 +35,7 @@ $ ant build
 
 これだけで、binディレクトリの中にHelloAntActivity-debug.apkができます
 
-### リリースビルド(未署名)
+## リリースビルド(未署名)
 
 ```
 $ ant release
@@ -40,7 +43,7 @@ $ ant release
 
 未署名のHelloAntActivity-release-unsigned.apkができます
 
-### リリースビルド(署名あり)
+## リリースビルド(署名あり)
 
 ant.propertiesを作成する
 
@@ -60,8 +63,7 @@ $ ant release
 
 今度は「HelloAntActivity-release.apk」ができます  
 
-### apkファイルの名前を変える
+## apkファイルの名前を変える
 
 build.xmlのprojectタグのname属性を変える  
 デフォルトは「{プロジェクト名}Activity」になっている
-

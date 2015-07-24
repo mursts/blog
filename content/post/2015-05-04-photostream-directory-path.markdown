@@ -1,6 +1,5 @@
 +++
 date = "2015-05-04T02:44:52+09:00"
-draft = true
 title = "フォトストリームの写真の保存先"
 tags = ["iPhoto", "Photos"]
 

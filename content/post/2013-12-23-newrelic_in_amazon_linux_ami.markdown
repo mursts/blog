@@ -3,7 +3,7 @@
 title: "New RelicをEC2にインストール"
 date: 2013-12-23
 comments: true
-tags: ["NewRelic", ""]
+tags: ["NewRelic"]
 ---
 
 先日

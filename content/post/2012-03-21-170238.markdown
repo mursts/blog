@@ -1,25 +1,29 @@
 ---
 
+slug: "Memcached-with-Python"
 title: "PythonでMemcached"
 date: 2012-03-21
 comments: true
 tags: ["Python", "Memcached", "CentOS"]
 ---
-### memcachedをインストール
+
+CentOSにmemcachedをインストールしました。
 
 <!--more-->
+
+## memcachedをインストール
 
 ```bash
 $ sudo yum install memcached
 ```
 
-### Pythonから使えるようにモジュールをインストール
+## Pythonから使えるようにモジュールをインストール
 
 ```bash
 $ pip install python-memcached
 ```
 
-### 動作確認
+## 動作確認
 
 ```python
 >>> import memcache
