@@ -5,6 +5,11 @@ title = "Raspberry PiにNode.jsをインストールする"
 tags = ["Raspberry Pi", "Node.js"]
 +++
 
+## 追記
+Node.jsのバージョン4でソースからのインストールが不要になったので、[別記事](/entry/2015/10/13/install-nodejs-v4-to-raspberrypi2)でインストール手順を書きました。
+
+---
+
 ndevnを使ってNode.jsのバージョンを管理する環境を作りました
 
 [ndenv](https://github.com/riywo/ndenv)
