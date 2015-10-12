@@ -18,8 +18,6 @@ $ uname -a
 Linux raspberrypi 3.18.12-v7+ #783 SMP PREEMPT Tue May 5 22:48:52 BST 2015 armv7l GNU/Linux
 ```
 
-結果だけ書くと、`node-build`で最新のNodeをインストールしたかったけど、バイナリがなかったのでソールからインストールしました。
-
 ## ndenvをインストール
 
 ```bash
