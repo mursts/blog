@@ -2,7 +2,7 @@
 
 title: "PyCharmのヒープサイズを変更する"
 date: 2015-02-07
-slug = "tuning-pycharm"
+slug: "tuning-pycharm"
 comments: true
 tags: ["PyCharm"]
 ---
