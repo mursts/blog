@@ -2,19 +2,18 @@ baseurl = "http://blog.mursts.jp/"
 languageCode = "ja"
 title = ">> work.log"
 tags = "tags"
-theme = "pixyll"
+theme = "angels-ladder"
+
+disqusShortname = "worklog"
 
 [permalinks]
     post = "/entry/:year/:month/:day/:slug/"
 
-[indexes]
-  tag = "tags"
-
 [params]
-    google_analytics_id = "UA-39930558-1"
-    twitter_username = "mursts"
-    author = "@mursts"
-    avatar = "/mursts.jpg"
-    paginate = true
-    disqus_shortname = "worklog"
+    subtitle = "チラ裏です"
+    twitter = "https://twitter.com/mursts"
+    github = "https://github.com/mursts"
+    copyright = "Written by mursts"
+    analytics = "UA-39930558-1"
+
 
