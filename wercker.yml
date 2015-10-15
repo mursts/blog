@@ -3,7 +3,7 @@ build:
   steps:
     - arjen/hugo-build:
         version: "0.14"
-        theme: pixyll 
+        theme: angels-ladder
         flags: --buildDrafts=true
 deploy:
   steps:
