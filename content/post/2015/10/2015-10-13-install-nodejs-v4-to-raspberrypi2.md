@@ -6,7 +6,7 @@ title = "Raspberry Pi2にNode.jsのv4をインストールする"
 
 +++
 
-[この記事](http://blog.mursts.jp/entry/2015/07/08/install-nodejs-to-raspberrypi/)でRaspiにNode.jsをソースからインストールしてましたが、nodeがバージョン4でARMをサポートしてくれたので簡単にファイルを展開するだけでNode.jsが使えるようになりました。
+[この記事](http://blog.mursts.jp/entry/2015/07/08/install-nodejs-to-raspberrypi/)でRaspiにNode.jsをソースからインストールしてましたが、バージョン4で再度ARMをサポートしてくれたのでファイルを展開するだけでNode.jsが使えるようになりました。
 
 インストール方法は以下のとおり。
 
