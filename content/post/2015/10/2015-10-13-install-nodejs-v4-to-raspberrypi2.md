@@ -1,7 +1,7 @@
 +++
 date = "2015-10-13T00:10:02+09:00"
 slug = "install-nodejs-v4-to-raspberrypi2"
-tags = ["Raspberry Pi", "Node.js"]
+tags = ["Raspberry Pi", "Nodejs"]
 title = "Raspberry Pi2にNode.jsのv4をインストールする"
 
 +++
