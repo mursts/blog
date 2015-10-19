@@ -15,5 +15,6 @@ disqusShortname = "worklog"
     github = "https://github.com/mursts"
     copyright = "Written by mursts"
     analytics = "UA-39930558-1"
+    showsRSS = true
 
 
