@@ -6,7 +6,7 @@ title = "about"
 
 +++
 
-## @mursts
+### @mursts <みうら さとし>
 
 愛知で働く派遣プログラマ。Python東海の運営に関わっています
 
