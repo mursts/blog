@@ -97,7 +97,6 @@ mysql> show databases;
 ## ローカルマシンからコンテナのMｙSQLに接続
 
 ```sh
-$ mysql -h`docker-machine ip dev` -uroot -p
 # ローカルから
 $ echo $(docker-machine ip dev)
 192.168.99.101
