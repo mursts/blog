@@ -2,7 +2,7 @@
 date = "2015-11-12T00:49:24+09:00"
 slug = "android-device-art-generator"
 tags = ["Android"]
-title = "Device Art GeneratorでAndroidの嵌めこみ画像を作成する"
+title = "Device Art GeneratorでAndroidのはめこみ画像を作成する"
 
 +++
 
