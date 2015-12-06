@@ -11,7 +11,7 @@ title = "gitのsubmodulesを削除する"
 [Gitのsubmoduleをお手軽に削除する](http://raimon49.github.io/2015/04/04/git-submodule-deinit.html)にあるように`git deinit`を実行してコミットする
 
 ```sh
-$ git deinit xxxxxxx
+$ git submodule deinit xxxxxxx
 $ git rm xxxxxxx
 $ git commit
 ```
