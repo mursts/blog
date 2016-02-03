@@ -8,7 +8,7 @@ build:
 deploy:
   steps:
     - install-packages:
-        packages: perl-modules liberror-perl git ssh-client
+        packages: perl perl-modules liberror-perl git ssh-client
     - lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN
         domain: blog.mursts.jp
