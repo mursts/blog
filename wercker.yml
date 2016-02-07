@@ -4,7 +4,7 @@ build:
     - arjen/hugo-build:
         version: "0.15"
         theme: angels-ladder
-        flags: --buildDrafts=true
+        flags: --buildDrafts=false
 deploy:
   steps:
     - install-packages:
