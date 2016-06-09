@@ -2,6 +2,7 @@
 
 title: "PythonでFlickrの短縮URLを作成"
 date: 2012-03-30
+slug: "python-flickr-shorturl"
 comments: true
 tags: ["Python"]
 ---

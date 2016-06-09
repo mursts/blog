@@ -2,6 +2,7 @@
 
 title: "App EngineでPyObjCがないと警告が出た"
 date: 2013-03-28
+slug: "appengine-warning-not-found-pyobjc"
 comments: true
 tags: ["AppEngine", "Python"]
 ---

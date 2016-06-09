@@ -2,6 +2,7 @@
 
 title: "AndroidエミュレータからAppEngineの開発用サーバにアクセスする"
 date: 2012-04-04
+slug: "android-emulator-access-from-appengine"
 comments: true
 tags: ["Android", "AppEngine"]
 ---

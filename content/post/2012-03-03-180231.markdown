@@ -2,6 +2,7 @@
 
 title: "DownloadManagerを使ってみた"
 date: 2012-03-03
+slug: "android-downloadmanager"
 comments: true
 tags: ["Android"]
 ---

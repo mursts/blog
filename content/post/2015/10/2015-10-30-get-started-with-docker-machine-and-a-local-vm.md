@@ -8,6 +8,8 @@ title = "Docker Machine入門"
 
 [前回](/entry/2015/10/28/get-started-with-docker/)の記事でMacにDockerをインストールしてhello world的なことをやったけど、あれだけだとよくわからないので改めてDocker Machineに入門する
 
+<!--more-->
+
 https://docs.docker.com/machine/get-started/
 
 ## Docker Machineで仮想マシンを作成する

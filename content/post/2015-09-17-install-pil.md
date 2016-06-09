@@ -14,6 +14,8 @@ Some externally hosted files were ignored as access to them may be unreliable (u
 No matching distribution found for PIL
 ```
 
+<!--more-->
+
 `--allow-external PIL` を付けろとのこと
 
 ```bash

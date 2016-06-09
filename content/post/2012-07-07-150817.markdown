@@ -2,6 +2,7 @@
 
 title: "MacOSでさくらインターネットのVNCコンソールが開かない場合"
 date: 2012-07-07
+slug: "osx-sakura-internet-vnc-console"
 comments: true
 tags: ["VPS"]
 ---

@@ -2,6 +2,7 @@
 
 title: "DropboxのCamera Uploadsにアップロードされた写真・動画を自動で振り分けるようにした"
 date: 2012-11-03
+slug: "dropbox-camera-uploads"
 comments: true
 tags: ["Dropbox", "Python"]
 ---

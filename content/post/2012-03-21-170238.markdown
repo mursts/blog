@@ -2,6 +2,7 @@
 
 slug: "Memcached-with-Python"
 title: "PythonでMemcached"
+slug: "python-membached"
 date: 2012-03-21
 comments: true
 tags: ["Python", "Memcached", "CentOS"]

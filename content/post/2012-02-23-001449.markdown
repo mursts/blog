@@ -2,6 +2,7 @@
 
 title: "mp3gainのオプション"
 date: 2012-02-23
+slug: "mp3gain-option"
 comments: true
 tags: ["Mp3Gain"]
 ---

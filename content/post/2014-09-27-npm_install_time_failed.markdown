@@ -2,6 +2,7 @@
 
 title: "npmでtimeモジュールのインストールに失敗"
 date: 2014-09-27
+slug: "npm-time-module-install-failed"
 comments: true
 tags: ["npm"]
 ---

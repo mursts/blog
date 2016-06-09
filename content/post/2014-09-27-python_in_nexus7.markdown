@@ -2,6 +2,7 @@
 
 title: "Nexus7にPythonが動く環境を作る"
 date: 2014-09-27
+slug: "nexus7-python"
 comments: true
 tags: ["Nexus7", "Android", "Python"]
 ---

@@ -1,6 +1,7 @@
 +++
 date = "2015-05-04T02:44:52+09:00"
 title = "フォトストリームの写真の保存先"
+slug = "photostream-directory"
 tags = ["iPhoto", "Photos"]
 
 +++

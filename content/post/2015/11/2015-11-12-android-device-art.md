@@ -10,6 +10,8 @@ Google Playのアプリ紹介画像でよくみる端末のはめ込み画像で
 
 [Device Art Generator](http://developer.android.com/distribute/tools/promote/device-art.html)
 
+<!--more-->
+
 ![](/post/2015/11/device-art-generator.jpg)
 
 使い方は画像を作成したい端末にドラッグ&ドロップするだけです。

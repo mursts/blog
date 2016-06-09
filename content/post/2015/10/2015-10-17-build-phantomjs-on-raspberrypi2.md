@@ -6,11 +6,13 @@ title = "Raspberry Pi2でPhantomJSをビルドする"
 
 +++
 
-先日PhantomJSを使うとSeleniumを使った時にブラウザが起動しないと聞きましたので、以下を参考にやってみました。
+先日PhantomJSを使うとSeleniumを使った時にブラウザが起動しないと聞いたので、以下を参考にやってみました。
 
 [How To Compile PhantomJS on the Raspberry Pi 2](http://raspberrypimaker.com/how-to-compile-phantomjs-on-the-raspberry-pi-2/)
 
 ※ OSXではHomebrewでインストールできるけど、Raspiの場合はソースからビルドが必要なようです。
+
+<!--more-->
 
 ## 必要なパッケージをインストール
 

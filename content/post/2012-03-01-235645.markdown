@@ -2,6 +2,7 @@
 
 title: "InputStreamをStringに変換する"
 date: 2012-03-01
+slug: "java-inputstream-to-string"
 comments: true
 tags: ["Java"]
 ---

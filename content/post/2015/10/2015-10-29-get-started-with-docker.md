@@ -8,6 +8,8 @@ title = "DockerをMacにインストールする"
 
 [マニュアル](http://docs.docker.com/mac/started/)を見ながらMacにDockerを入れてみた。
 
+<!--more-->
+
 ## インストール
 
 http://docs.docker.com/mac/step_one/

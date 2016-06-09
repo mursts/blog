@@ -2,6 +2,7 @@
 
 title: "MacでHubotを動かしてみた"
 date: 2014-09-19
+slug: "osx-hubot"
 comments: true
 tags: ["Hubot"]
 ---

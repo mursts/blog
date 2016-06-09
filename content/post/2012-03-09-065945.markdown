@@ -2,6 +2,7 @@
 
 title: "libxml2-pythonをインストール"
 date: 2012-03-09
+slug: "install-libxml2"
 comments: true
 tags: ["Python"]
 ---

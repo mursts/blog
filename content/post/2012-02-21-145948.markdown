@@ -3,6 +3,7 @@
 title: "CentOSにDropboxをインストール"
 date: 2012-02-21
 comments: true
+slug: "install-dropbox-on-cnetos"
 tags: ["Dropbox", "CentOS"]
 ---
 [Install Dropbox via command line](https://www.dropbox.com/install?os=lnx)

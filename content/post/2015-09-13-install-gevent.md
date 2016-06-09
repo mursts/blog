@@ -22,6 +22,8 @@ $ pip install gevent
 TypeError: unsupported operand type(s) for >>: 'builtin_function_or_method' and '_io.TextIOWrapper'
 ```
 
+<!--more-->
+
 [pypi](https://pypi.python.org/pypi/gevent)を見るとstable版はPython2系のみで3系はベータ版のみ対応でした。
 
 なのでバージョンを指定してインストールするとインストールは成功です

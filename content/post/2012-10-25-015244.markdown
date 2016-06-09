@@ -3,6 +3,7 @@
 title: "watchdogでファイル監視してみた"
 date: 2012-10-25
 comments: true
+slug: "watchdog"
 tags: ["Python"]
 ---
 [前回の記事](http://blog.mursts.jp/entry/2012/10/20/030337)でUbuntuにinotify-toolsをインストールしてファイル監視をしようとしたけれど、MacやWindowsでもできるようにPythonモジュールのwatchdogを使ってファイルの監視をやってみました。  

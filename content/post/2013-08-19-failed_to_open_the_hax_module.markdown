@@ -2,6 +2,7 @@
 
 title: "Androidのエミュレータが起動できなくなった"
 date: 2013-08-19
+slug: "android-emulator-not-startup"
 comments: true
 tags: ["Android"]
 ---

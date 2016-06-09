@@ -15,6 +15,8 @@ $ go version
 go version go1.3.3 linux/arm
 ```
 
+<!--more-->
+
 なんと`1.3`でした。2016/04/01の現在の最新は`1.6`です。
 
 今更1.3もないので、、[Getting Started](https://golang.org/doc/install)を見ながらインストールしました。

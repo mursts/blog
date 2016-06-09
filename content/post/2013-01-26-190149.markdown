@@ -2,6 +2,7 @@
 
 title: "BLINK(1)を買いました。"
 date: 2013-01-26
+slug: "blick1"
 comments: true
 tags: ["BLINK(1)"]
 ---

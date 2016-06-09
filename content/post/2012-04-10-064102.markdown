@@ -2,6 +2,7 @@
 
 title: "Pythonでユニットテストをやってみた"
 date: 2012-04-10
+slug: "python-unittest"
 comments: true
 tags: ["Python"]
 ---

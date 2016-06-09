@@ -2,6 +2,7 @@
 
 title: "Pythonで花粉データを取得"
 date: 2012-03-22
+slug: "python-pollen"
 comments: true
 tags: ["Python"]
 ---

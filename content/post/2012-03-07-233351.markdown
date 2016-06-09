@@ -2,6 +2,7 @@
 
 title: "NexusSをrsyncを使ってバックアップ"
 date: 2012-03-07
+slug: "nexuss-rsync-backup"
 comments: true
 tags: ["NexusS"]
 ---

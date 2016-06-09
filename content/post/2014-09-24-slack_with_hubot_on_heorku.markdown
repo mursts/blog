@@ -2,6 +2,7 @@
 
 title: "SlackとHubotを連携してHerokuにデプロイ"
 date: 2014-09-24
+slug: "slack-hubot-heroku"
 comments: true
 tags: ["Slack", "Hubot", "Heroku"]
 ---

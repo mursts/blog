@@ -23,6 +23,8 @@ Traceback (most recent call last):
 oauth2client.client.CryptoUnavailableError: No crypto library available
 ```
 
+<!--more-->
+
 となった場合、`oauth2client/client.py`の`_RequireCryptoOrDie`をみると
 
 > The oauth2client.crypt module requires either PyCrypto or PyOpenSSL

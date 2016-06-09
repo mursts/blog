@@ -13,6 +13,8 @@ title = "Dockerコンテナを使ってMySQLのレプリケーションをやっ
 
 レプリケーションの設定はOracle主催のMySQLセミナーで頂いた資料を元にしています。
 
+<!--more-->
+
 ## MySQLの準備
 
 docker-machineでホストから作成する

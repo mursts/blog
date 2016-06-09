@@ -2,6 +2,7 @@
 
 title: "New RelicをEC2にインストール"
 date: 2013-12-23
+slug: "install-new-relic"
 comments: true
 tags: ["NewRelic"]
 ---

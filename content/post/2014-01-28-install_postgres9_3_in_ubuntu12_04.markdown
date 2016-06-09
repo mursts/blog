@@ -2,6 +2,7 @@
 
 title: "Ubuntu12.04にPostgres9.3をインストールする"
 date: 2014-01-28
+slug: "install-postgres9dot3"
 comments: true
 tags: ["Ubuntu", "PostgreSQL"]
 ---

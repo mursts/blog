@@ -8,6 +8,8 @@ title = "Androidのシステム調整UI調整ツール"
 
 以下のツイートから知りましたが、Android 6.0の隠し機能でシステムUI調整ツールが追加されたようです。
 
+<!--more-->
+
 {{% twitter androidzaurus 656708461628014592 %}}
 
 このUIツールを使うと [Androidのバッテリー残量をパーセンテージで表示する](http://localhost:1313/entry/2015/06/21/android-show-battery-percentage/) で紹介したバッテリー表示をコマンドからでなく、画面上でON・OFFできるようになりました。

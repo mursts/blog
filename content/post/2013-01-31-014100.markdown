@@ -2,6 +2,7 @@
 
 title: "美女？をEvernoteにクリップする"
 date: 2013-01-31
+slug: "girl-evernote-clip"
 comments: true
 tags: ["Python", "Evernote"]
 ---
