@@ -1,4 +1,4 @@
-baseurl = "http://blog.mursts.jp/"
+baseurl = "/"
 languageCode = "ja"
 title = ">> work.log"
 theme = "beautifulhugo"
@@ -6,9 +6,6 @@ theme = "beautifulhugo"
 [Indexes]
 tag = "tags"
 
-#disqusShortname = "worklog"
-
-pygmentsUseClasses = true
 disqusShortname = "worklog"
 googleAnalytics = "UA-39930558-1"
 
