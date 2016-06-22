@@ -1,31 +1,29 @@
 baseurl = "/"
-languageCode = "ja"
+languageCode = "ja-JP"
 title = ">> work.log"
 theme = "beautifulhugo"
 
-[Indexes]
-tag = "tags"
+[permalinks]
+  post = "/entry/:year/:month/:day/:slug/"
 
+pygmentsUseClasses = true
 disqusShortname = "worklog"
 googleAnalytics = "UA-39930558-1"
 
-[permalinks]
-    post = "/entry/:year/:month/:day/:slug/"
-
 [Params]
-#  logo = "mursts.jpg"
+  logo = ""
   subtitle = "チラ裏です"
 
 [Author]
   name = "mursts"
-#  email = "youremail@domain.com"
+  email = ""
   facebook = "Satoshi.3URA"
   github = "mursts"
   twitter = "mursts"
-#  linkedin = "pub/username/X/YYY/ZZZ"
-#  stackoverflow = "XXXXXXX/username"
-#  soundcloud = "username"
-#  wikipedia = "username"
+  linkedin = ""
+  stackoverflow = ""
+  soundcloud = ""
+  wikipedia = ""
 
 [[menu.main]]
     name = "Blog"
