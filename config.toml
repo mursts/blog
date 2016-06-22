@@ -11,7 +11,7 @@ disqusShortname = "worklog"
 googleAnalytics = "UA-39930558-1"
 
 [Params]
-  logo = ""
+  logo = "icon.png"
   subtitle = "チラ裏です"
 
 [Author]
