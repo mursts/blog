@@ -1,0 +1,19 @@
+div.site {
+  max-width: 950px;
+}
+
+article.single .article-body {
+  margin-bottom: 5.0rem;
+}
+
+article.li {
+  margin-bottom: 40px;
+}
+
+article.li a {
+  display: inline;
+}
+
+header.site .title a {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
