@@ -17,3 +17,5 @@ paginate = 5
   DateForm = "2006/01/02"
 
   SyntaxHighlightTheme = "github.min.css"
+
+  GoogleAnalyticsUserID = "UA-39930558-1"
