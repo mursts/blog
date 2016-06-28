@@ -1,36 +1,19 @@
 baseurl = "/"
-languageCode = "ja-JP"
+languageCode = "ja-jp"
 title = ">> work.log"
-theme = "beautifulhugo"
+theme = "aglaus"
+
+copyright = "Copyright (c) 2012 - 2016, mursts; all rights reserved."
+canonifyurls = true
+paginate = 5
 
 [permalinks]
   post = "/entry/:year/:month/:day/:slug/"
 
-pygmentsUseClasses = true
-disqusShortname = "worklog"
-googleAnalytics = "UA-39930558-1"
-
-[Params]
-  logo = "icon.png"
+[params]
   subtitle = "チラ裏です"
+  disqusShortname = "worklog"
+  toc = false
+  DateForm = "2006/01/02"
 
-[Author]
-  name = "mursts"
-  email = ""
-  facebook = "Satoshi.3URA"
-  github = "mursts"
-  twitter = "mursts"
-  linkedin = ""
-  stackoverflow = ""
-  soundcloud = ""
-  wikipedia = ""
-
-[[menu.main]]
-    name = "Blog"
-    url = "/"
-    weight = 1
-
-[[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
+  SyntaxHighlightTheme = "github.min.css"
