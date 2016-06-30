@@ -2,14 +2,11 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.15"
-        theme: angels-ladder
+        theme: aglaus
         flags: --buildDrafts=false
 deploy:
   steps:
-    - install-packages:
-        packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
-        token: $GIT_TOKEN
-        domain: blog.mursts.jp
-        basedir: public
+    - keima/go-appengine-util:
+        method: deploy
+        gopath: $WERCKER_SOURCE_DIR
+        token: $APP_ENGINE_TOKEN
