@@ -6,7 +6,7 @@ build:
         flags: --buildDrafts=false
 deploy:
   steps:
-    - keima/go-appengine-util:
+    - keima/go-appengine-util@0.2.4:
         method: deploy
         gopath: $WERCKER_SOURCE_DIR
         token: $APP_ENGINE_TOKEN
