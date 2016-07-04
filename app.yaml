@@ -72,3 +72,4 @@ skip_files:
 - ^config.toml
 - ^README.md
 - ^wercker.yml
+- ^Dockerfile
