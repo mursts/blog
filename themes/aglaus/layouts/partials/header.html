@@ -21,6 +21,7 @@
     <title>{{ .Title }} - {{ .Site.Title }}</title>
     <meta property='og:title' content="{{ .Title }} - {{ .Site.Title }}">
     <meta property="og:type" content="article">
+    <meta property="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     {{ end }}
 
     <meta property="og:url" content="{{ .Permalink }}">
