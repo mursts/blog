@@ -111,14 +111,16 @@ if __name__ == '__main__':
 
 ## Datastore Emulator
 
+DatastoreへのアクセスもGAEと同じように開発環境が用意されています。
+
 {{% blogcard "https://cloud.google.com/datastore/docs/tools/datastore-emulator" %}}
 
 {{% blogcard "http://googlecloudplatform-japan.blogspot.jp/2016/01/google-cloud-cli.html" %}}
 
-DatastoreへのアクセスもGAEと同じように開発環境が用意されています。
-起動には[Google Cloud SDK](https://cloud.google.com/sdk/)が必要です。
 
 ### エミュレータ起動
+
+起動には[Google Cloud SDK](https://cloud.google.com/sdk/)が必要です。
 
 ```sh
 $ gcloud beta emulators datastore start --project=プロジェクトID
