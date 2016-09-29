@@ -2,7 +2,7 @@ box: mursts/hugo-deploy
 build:
   steps:
     - arjen/hugo-build:
-        theme: aglaus
+        theme: hugo-future-imperfect
         flags: --buildDrafts=false
 deploy:
   steps:
