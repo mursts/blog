@@ -115,8 +115,10 @@
                     <li>
                         <article>
                             <header>
-                                <a href="/tags/{{ $value.Name | urlize }}/">{{ $value.Name }}</a>
-                                <span style="float:right;">{{ $value.Count }}</span>
+                                <h3>
+                                    <a href="/tags/{{ $value.Name | urlize }}/">{{ $value.Name }}</a>
+                                    <span style="float:right;">{{ $value.Count }}</span>
+                                </h3>
                             </header>
                         </article>
                     </li>
