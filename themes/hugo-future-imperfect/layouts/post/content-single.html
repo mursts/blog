@@ -8,9 +8,11 @@
     </section>
     {{ .Render "featured" }}
 
+    <div stype="margin-top: 50px; margin-bottom: 50px;">
     {{ if not (in (printf "%#v" .Site.BaseURL) "localhost") }}
         {{ partial "ad.html" . }}
     {{ end }}
+    </div>
 
     <div id="content">
         {{ .Content }}
