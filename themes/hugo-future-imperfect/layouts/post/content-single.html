@@ -8,8 +8,10 @@
     </section>
     {{ .Render "featured" }}
 
-    {{ partial "ad.html" . }}
-    
+    {{ if not (in (printf "%#v" .Site.BaseURL) "localhost") }}
+        {{ partial "ad.html" . }}
+    {{ end }}
+
     <div id="content">
         {{ .Content }}
     </div>
