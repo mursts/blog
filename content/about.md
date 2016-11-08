@@ -1,7 +1,7 @@
 +++
 date = "2015-07-25T01:32:48+09:00"
 slug = ""
-tags = [""]
+tags = []
 title = "about"
 
 +++
@@ -13,13 +13,14 @@ title = "about"
 * [GitHub](https://github.com/mursts)
 * [Twitter](https://twitter.com/mursts)
 * [Speaker Deck](https://speakerdeck.com/mursts)
+
 ---
 
-#### Python東海
+### Python東海
 
 * http://connpass.com/series/292/
 
-#### GCPUG
+### GCPUG
 
 * http://gcpug.jp
 * http://gcpug-nagoya.connpass.com/

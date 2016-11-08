@@ -16,12 +16,11 @@ GAEからではなく、ローカルからPython3でCloud Datastoreにデータ�
 
 ### サービスアカウント作成して鍵を取得
 
-1. [Google Cloud Platform Console](https://console.cloud.google.com/)を開く
-1. `API Manager` - `認証情報`で認証情報を作成する
-
-    1. `認証情報を作成`ボタン - `サービスアカウントキー`
-    1. `サービスアカウント`で`新しいサービスアカウント`を選択(未作成の場合)
-    1. アカウント名と役割を入力して、キーのタイプを選択する(jsonが推奨)
+- [Google Cloud Platform Console](https://console.cloud.google.com/)を開く
+- `API Manager` - `認証情報`で認証情報を作成する
+    - `認証情報を作成`ボタン - `サービスアカウントキー`
+    - `サービスアカウント`で`新しいサービスアカウント`を選択(未作成の場合)
+    - アカウント名と役割を入力して、キーのタイプを選択する(jsonが推奨)
 
 ![](/post/2016/09/API-Manager1.jpg)
 

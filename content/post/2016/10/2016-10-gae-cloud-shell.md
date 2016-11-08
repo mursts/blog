@@ -66,7 +66,7 @@ Cloud Shell上でコードを書く場合は、ファイルをアップロード
 
 app.yaml
 
-```yaml
+```javascript
 runtime: python27
 api_version: 1
 threadsafe: yes
@@ -82,7 +82,7 @@ libraries:
 
 main.py
 
-```Python
+```python
 # coding: utf-8
 
 import webapp2

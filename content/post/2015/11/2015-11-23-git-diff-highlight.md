@@ -20,7 +20,7 @@ title = "diff-highlightでGitのdiffを見やすくする"
 
 のようですが、`diff-highlight`の場所がわからなかったので探しました。
 
-- [diff-highlight](https://github.com/git/git/tree/master/contrib/diff-highlight)
+[diff-highlight](https://github.com/git/git/tree/master/contrib/diff-highlight)
 
 ## 環境
 
