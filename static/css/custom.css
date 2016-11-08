@@ -38,7 +38,7 @@ img {
 .post-body ul {
 	margin: 0;
 	padding: 0;
-	margin: 20px 0px 110px 0px;
+	margin: 20px 0px 20px 0px;
 }
 
 .profile #sitetitle {
@@ -57,5 +57,5 @@ a.symbol {
 }
 
 .ad {
-	margin: 50px auto;
+	margin: 20px 0px 20px 0px;
 }
