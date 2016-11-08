@@ -2,9 +2,8 @@ baseurl = "/"
 languageCode = "ja-jp"
 title = ">> work.log"
 theme = "hugo-cactus-theme"
-# paginate = 5
-# disqusShortname = "worklog"
-# googleAnalytics = "UA-39930558-1"
+disqusShortname = "worklog"
+googleAnalytics = "UA-39930558-1"
 
 [permalinks]
   post = "/entry/:year/:month/:day/:slug/"
@@ -12,7 +11,7 @@ theme = "hugo-cactus-theme"
 [params]
   name = "mursts"
   description = "Describe your website"
-  bio = "Blogger - Programmer - Gopher"
+  bio = "チラ裏です"
   # Enter optionally your twitter account
   twitter = "mursts"
   enableRSS = true
@@ -25,16 +24,16 @@ theme = "hugo-cactus-theme"
   # translate or customize each string of the theme.
 
   # Navigation links
-  home = "/"
-  about = "/about"
-  subscribe = ""
+  home = "Home"
+  about = "About"
+  subscribe = "Rss"
   # Pagination links
   olderPosts = ""
   newerPosts = ""
   readMore = ""
   copyright = ""
   # Sharing options and author information in posts
-  aboutAuthor = "I'm an enthusiastic gopher."
+  aboutAuthor = "Python東海 / GCPUG Nagoyaの中の人"
   tweet = ""
   share = ""
   # 404 page
@@ -42,6 +41,11 @@ theme = "hugo-cactus-theme"
   subtitle404 = ""
 
   # Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
-  iconFont = "mono-social"
+  iconFont = "font-awesome"
    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
   socialIconStyle = "circle"
+
+[social]
+  twitter  = "https://www.twitter.com/mursts"
+  github   = "https://www.github.com/mursts"
+  instagram   = "https://www.instagram.com/mursts/"
