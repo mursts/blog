@@ -1,118 +1,47 @@
 baseurl = "/"
 languageCode = "ja-jp"
 title = ">> work.log"
-theme = "hugo-future-imperfect"
-preserveTaxonomyNames = true
-paginate = 5
-disqusShortname = "worklog"
-googleAnalytics = "UA-39930558-1"
+theme = "hugo-cactus-theme"
+# paginate = 5
+# disqusShortname = "worklog"
+# googleAnalytics = "UA-39930558-1"
 
 [permalinks]
   post = "/entry/:year/:month/:day/:slug/"
 
 [params]
-  # Sets the meta tag description, usually reserved for the main page
-  # description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
-  description          = ""
-  # This will appear on the top left of the navigation bar
-  navbarTitle          = ">> work.log"
-  # Social media buttons that appear on the sidebar
-  socialAppearAtTop    = true
-  socialAppearAtBottom = true
-  # set this to the section name if section is not post
-  viewMorePostLink     = "/"
+  name = "mursts"
+  description = "Describe your website"
+  bio = "Blogger - Programmer - Gopher"
+  # Enter optionally your twitter account
+  twitter = "mursts"
+  enableRSS = true
 
-  categoriesByCount    = true
-  includeReadingTime   = false
-  # The set of favicons used are based on the write-up from this link:
-  # https://github.com/audreyr/favicon-cheat-sheet
-  # Please see the favicon partial template for more information
-  loadFavicon          = false
-  faviconVersion       = ""
+  # Add custom assets with their paths relative to the static folder
+  customCSS = ["/css/custom.css"]
+  customJS  = []
 
-  # Load custom CSS or JavaScript files. This replaces the deprecated params
-  # minifiedFilesCSS and minifiedFilesJS. The variable is an array so that you
-  # can load multiple files if necessary. You can also load the standard theme
-  # files by adding the value, "default".
-  customCSS            = ["default", "/css/custom.css"]
-  # customJS             = ["default", "/path/to/file"]
+  # The variables below are optionally too and can be used to
+  # translate or customize each string of the theme.
 
-  # Loading min files for exampleSite
-  # customCSS            = ["/css/main.min.css"]
-  # customJS             = ["/js/main.min.js"]
+  # Navigation links
+  home = "/"
+  about = "/about"
+  subscribe = ""
+  # Pagination links
+  olderPosts = ""
+  newerPosts = ""
+  readMore = ""
+  copyright = ""
+  # Sharing options and author information in posts
+  aboutAuthor = "I'm an enthusiastic gopher."
+  tweet = ""
+  share = ""
+  # 404 page
+  title404 = ""
+  subtitle404 = ""
 
-[params.intro]
-  header    = ">> WORK.LOG"
-
-  # paragraph = "Another fine responsive site template by <a href=\"http://html5up.net\">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i>"
-  paragraph = "チラ裏です"
-  # about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
-  about     = "Python東海 / GCPUG Nagoyaの中の人やってます。\n Python / Go / GAE"
-
-# This will also appear on the sidebar.
-# A width of less than 100px is recommended
-# This is optional
-[params.intro.pic]
-    # src       = "/img/main/logo.jpg"
-    # modify your picture in the shape of a circle or
-    # future imperfect's hexagonal shape
-    circle    = false
-    imperfect = true
-    width     = ""
-    alt       = "Hugo Future Imperfect"
-
-# Adjust the amount of recent posts on the sidebar.
-# This is optional. The default value 5 will be used
-[params.postAmount]
-    sidebar = 5
-
-# Set up your menu items in the navigation bar
-# You can use identifier to prepend a font awesome icon to your text
-[[menu.main]]
-    name = "Blog"
-    url = "/"
-    identifier = "fa fa-pencil"
-    weight = 1
-
-[[menu.main]]
-    name = "Tags"
-    url = "/tags"
-    weight = 2
-
-# [[menu.main]]
-#     name = "About"
-#     url = "/about"
-#     weight = 3
-
-# Insert your username and the icon will apear on the page as long as
-# socialAppearAtTop or socialAppearAtBottom is set to true in the params area
-# The social media icons will appear on the sidebar
-[social]
-    github          = "mursts"
-    bitbucket       = ""
-    jsfiddle        = ""
-    codepen         = ""
-    foursquare      = ""
-    dribbble        = ""
-    deviantart      = ""
-    behance         = ""
-    flickr          = ""
-    instagram       = "mursts"
-    youtube         = ""
-    vimeo           = ""
-    vine            = ""
-    medium          = ""
-    wordpress       = ""
-    tumblr          = ""
-    xing            = ""
-    linkedin        = ""
-    slideshare      = ""
-    stackoverflow   = ""
-    reddit          = ""
-    pinterest       = ""
-    googleplus      = ""
-    facebook        = ""
-    facebook_admin  = ""
-    twitter_domain  = ""
-    twitter         = "mursts"
-    email           = ""
+  # Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+  iconFont = "mono-social"
+   # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+  socialIconStyle = "circle"
