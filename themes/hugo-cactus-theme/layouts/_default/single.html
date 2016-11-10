@@ -20,7 +20,7 @@
                 </header>
 
                 <div>{{ partial "ad.html" . }}</div>
-                
+
                 <section id="post-body">
                     {{ .Content }}
                 </section>
@@ -37,6 +37,18 @@
                     {{ partial "share.html" . }}
                 </section>
             </footer>
+
+            <div class="ad">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- blog_rectangle -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:336px;height:280px"
+                     data-ad-client="ca-pub-1387605128842739"
+                     data-ad-slot="2670106403"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
 
             {{ template "_internal/disqus.html" . }}
 
