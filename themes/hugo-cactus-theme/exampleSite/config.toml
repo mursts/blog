@@ -1,20 +1,40 @@
 # Site settings
-baseurl = "https://example.org/"
-languageCode = "en-us"
-title = "Hugo Cactus Theme"
-theme = "hugo-cactus-theme"
+baseurl = "http://nodejh.com/"
+# HTML Language Code Reference, such as en, zh-cn
+languageCode = "en"
+title = "Blog Title"
+theme = "hugo-theme-cactus-plus"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
-# Disable comments by leaving disqusShortname empty
-disqusShortname = "spf13"
+googleAnalytics = "your_google_analytics_code"
+hasCJKLanguage = true
 
 [params]
-	name = "John Doe"
-	description = "Describe your website"
-	bio = "Blogger - Programmer - Gopher"
+	name = "Hugo"
+	description = "Blog Description"
+	bio = "Blog biology"
 	# Enter optionally your twitter account
-	twitter = "Your Twitter account"
-	enableRSS = true
+	twitter = "your_twotter"
+	enableRSS = false
+
+	# Disqus comment
+	disqusShortname = "your_disqus_short_name"
+	# Disable disqus comments by set `enableDisqus = "false"`
+	enableDisqus = false
+
+	# Duoshuo comment
+	duoshuoShortname = "your_duoshuo_short_name"
+	# Disable duoshuo comments by set `enableDuoshuo = "false"`
+	enableDuoshuo = false
+
+	enableGithubIssuesTips = false
+
+	# Enable googleAnalytics
+	enableGoogleAnalytics = false
+
+	# Enable baiduAnalytics
+	enableBaiduAnalytics = false
+	# Baidu Tongji Code
+	baiduAnalytics = 'your_baidu_tongji_code'
 
 	# Add custom assets with their paths relative to the static folder
 	customCSS = []
@@ -26,6 +46,7 @@ disqusShortname = "spf13"
 	# Navigation links
 	home = ""
 	about = ""
+	archive = ""
 	subscribe = ""
 	# Pagination links
 	olderPosts = ""
@@ -33,7 +54,7 @@ disqusShortname = "spf13"
 	readMore = ""
 	copyright = ""
 	# Sharing options and author information in posts
-	aboutAuthor = "I'm an enthusiastic gopher."
+	aboutAuthor = "I am so interesting."
 	tweet = ""
 	share = ""
 	# 404 page
@@ -41,13 +62,13 @@ disqusShortname = "spf13"
 	subtitle404 = ""
 
 	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
-	iconFont = "mono-social"
-    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-    socialIconStyle = "circle"
+	iconFont = "font-awesome"
+  # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+  socialIconStyle = ""
+
 
 # Add additional social link entries underneath
 [social]
-    twitter  = "https://www.twitter.com/"
-    facebook = "https://www.facebook.com/"
-    github   = "https://www.github.com/"
-    dribble  = "https://www.dribbble.com/"
+	facebook-square = "your_facebook_link"
+  twitter-square = "your_twitter_link"
+  github-square = "your_github_link"

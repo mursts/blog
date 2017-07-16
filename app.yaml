@@ -35,6 +35,11 @@ handlers:
   static_files: public/\1
   upload: public/(.*\.woff)
 
+- url: /(.*\.woff2)
+  mime_type: application/x-font-woff
+  static_files: public/\1
+  upload: public/(.*\.woff2)
+
 - url: /(.*\.xml)
   mime_type: application/xml
   static_files: public/\1

@@ -16,6 +16,14 @@ googleAnalytics = "UA-39930558-1"
   twitter = "mursts"
   enableRSS = true
 
+  # Disqus comment
+  disqusShortname = "worklog"
+  # Disable disqus comments by set `enableDisqus = "false"`
+  enableDisqus = true
+
+  # Enable googleAnalytics
+  enableGoogleAnalytics = true 
+
   # Add custom assets with their paths relative to the static folder
   customCSS = ["css/custom.css"]
   customJS  = []
@@ -49,3 +57,4 @@ googleAnalytics = "UA-39930558-1"
   twitter  = "https://www.twitter.com/mursts"
   github   = "https://www.github.com/mursts"
   instagram   = "https://www.instagram.com/mursts/"
+

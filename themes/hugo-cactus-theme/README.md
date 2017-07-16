@@ -1,72 +1,157 @@
-# Cactus Theme
+# Cactus Plus
 
-Cactus is a minimalistic theme for bloggers based on the default theme of the same-named [Cactus static site generator](//github.com/koenbok/Cactus) written in Python and [Nick Balestra](//github.com/nickbalestra/kactus)'s Jekyll port. Noteworthy features of this Hugo theme are the integration of a comment-system powered by Disqus, a customizable about page, support for RSS feeds, syntax highlighting for source code and sharing options for blog posts.
+[English Document](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README.md) | [中文文档](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/README_zh-cn.md)
 
 
-![Screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-cactus-theme/dev/images/screenshot.png)
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Cactus Plus](#cactus-plus)
+	- [Screenshot](#screenshot)
+	- [Installation](#installation)
+	- [Example Site](#example-site)
+	- [The config file](#the-config-file)
+	- [About page](#about-page)
+	- [Tags page](#tags-page)
+	- [Avatar](#avatar)
+	- [Hide pages](#hide-pages)
+	- [Disqus](#disqus)
+	- [Duoshuo](#duoshuo)
+	- [Disable Comment](#disable-comment)
+	- [Google Analytics](#google-analytics)
+	- [Baidu Tongji](#baidu-tongji)
+	- [Social link icons](#social-link-icons)
+	- [Nearly finished](#nearly-finished)
+	- [License](#license)
+	- [Acknowledgements](#acknowledgements)
+
+<!-- /TOC -->
+
+Cactus Plus is a minimalistic theme for bloggers based on the theme named [Cactus](https://github.com/digitalcraftsman/hugo-cactus-theme).
+
+**Noteworthy updates of this Hugo theme are :**
+
++ **a tags page**
++ **an archive page**
++ **both [Disqus](https://disqus.com/) and [Duoshuo](http://duoshuo.com/) comment-system**
++ **both Google Analytics and Baidu Tongji for site analytics.**
++ **Table of Content**
+
+Here's the link to online demo: [http://nodejh.com](http://nodejh.com).
+
+## Screenshot
+
+**home page**
+
+![Screenshot](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/images/screenshot.png)
+
+**tags page**
+
+![Screenshot](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/images/tags.png)
+
+**archive page**
+
+![Screenshot](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/images/archive.png)
 
 ## Installation
 
-Inside the folder of your Hugo site run:
-
-    $ cd themes
-    $ git clone https://github.com/digitalcraftsman/hugo-cactus-theme.git
+```
+$ cd themes
+$ git clone https://github.com/nodejh/hugo-theme-cactus-plus.git
+```
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
-### The config file
 
-Take a look inside the [`exampleSite`](//github.com/digitalcraftsman/hugo-cactus-theme/tree/dev/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/exampleSite/config.toml).
+## Example Site
 
-To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
+There is an example site with config file and markdown files in [`exampleSite`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite) directory.
+
+## The config file
+
+Take a look inside the [`exampleSite`](https://github.com/nodejh/hugo-theme-cactus-plus/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
+
+To use it, copy the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change strings as you like to customize your website.
 
 ## About page
 
-Use the about page to introduce yourself to your visitors. You can customize the content as you like in the [`config.toml`](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/exampleSite/config.toml). Furthermore, you should replace the [avatar placeholder](//github.com/digitalcraftsman/hugo-cactus-theme/blob/master/static/images/avatar.png) with a great image of yourself.
+Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/_index.md`.
+
+## Tags page
+
+Use the tags page to show all post's tags. You can create the file `/content/tags/_index.md` and set `hidden = true` so that the page does not show on your home page or other lists of pages.
+
+For example:
+
+```markdown
++++
+date = "2015-06-20T14:02:37+02:00"
+title = "Tags"
+hidden = true
++++
+```
+
+## Avatar
+
+Furthermore, you should replace the [avatar placeholder](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/static/images/) with a great image of yourself.
 
 ## Hide pages
 
-Pages can be hidden and don't appear in the post list on the homepage if you add the variable `hidden = true` to the frontmatter. This allows you to link from elsewhere, i.e. just the menu. 
+Pages can be hidden and don't appear in the post list on the homepage if you add the variable `hidden = true` to the frontmatter. This allows you to link from elsewhere, i.e. just the menu.
 
 ## Disqus
 
-This theme features a comment system powered by Disqus too. Just add your Disqus-shortname to the [`config.toml`](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/exampleSite/config.toml) and let readers respond to your blog posts.
+This theme features a comment system powered by Disqus. Just add your Disqus-shortname to the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) and set `enableDisqus = true`, then let readers respond to your blog posts.
+
+
+## Duoshuo
+
+This theme features a comment system powered by Duoshuo too. Duoshuo is mainly provide for Chinese users. Just add your Duoshuo-shortname to the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml) and set `enableDuoshuo = true`.
+
+
+## Disable Comment
+
+Just set both `enableDisqus = false` and `enableDuoshuo = false` if you want to disable comment.
+
+
+
+## Google Analytics
+
+This theme use Google Analytics defalut. If you want to disable Google Analytics, just set `enableGoogleAnalytics = false` in [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
+
+## Baidu Tongji
+
+This theme alse features Baidu Tongji for Chinese users. To use Baidu Tongji you should set `enableBaiduAnalytics = true` and set `baiduAnalytics` to your  `Baidu Tongji Code` which looks like `39843ea392201290bd6f76173d2e0000` in  [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml).
+
 
 ## Social link icons
 
-You can add a social link panel in the footer by adding entries to the `social` block in the [`config.toml`](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/exampleSite/config.toml). You can choose between two icon fonts:
+You can add a social link panel in the footer by adding entries to the `social` block in the [`config.toml`](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/exampleSite/config.toml). You can choose between two icon fonts:
 
 - [Font awesome](https://fortawesome.github.io/Font-Awesome/) or
 - [Mono social icons](https://github.com/drinchev/monosocialiconsfont)
 
 Assign either `font-awesome` or `mono-social` to the `iconFont` variable. The Mono social icons offer three styles of icons: -circle, rounded, or default (empty).
 
+
 ## Nearly finished
 
-In order to see your site in action, run Hugo's built-in local server. 
+In order to see your site in action, run Hugo's built-in local server.
 
-    $ hugo server
+```
+$ hugo server
+```
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
 
-## Contributing
-
-Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/digitalcraftsman/hugo-cactus-theme/issues) to let me know. Or make directly a [pull request](//github.com/digitalcraftsman/hugo-cactus-theme/pulls).
-
-Please create a separate branch for your pull request.
-
 
 ## License
 
-This theme is released under the MIT license. For more information read the [license](//github.com/digitalcraftsman/hugo-cactus-theme/blob/dev/LICENSE.md).
+This theme is released under the MIT license. For more information read the [license](https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/LICENSE.md).
 
 
 ## Acknowledgements
 
-Thanks to 
+Thanks to
 
-- [Nick Balestra](//github.com/nickbalestra/kactus) for creating the original theme
-- [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project.
-
+- [hugo-cactus-theme](https://github.com/digitalcraftsman/hugo-cactus-theme)
