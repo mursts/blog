@@ -1,0 +1,8 @@
+.idea
+archetypes
+content
+static
+themes
+.git
+config.toml
+README.md
