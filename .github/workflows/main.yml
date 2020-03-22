@@ -24,6 +24,14 @@ jobs:
       run: |
         gcloud config set project ${{ secrets.RUN_PROJECT }}
 
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.67.0'
+
+    - name: Build
+      run: hugo --minify
+
     - name: Deploy to App Engine
       run: |
         gcloud app deploy app.yaml --quiet
