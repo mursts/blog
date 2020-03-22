@@ -26,4 +26,4 @@ jobs:
 
     - name: Deploy to App Engine
       run: |
-        gcloud app deploy app.yaml --promote
+        gcloud app deploy app.yaml --quiet
