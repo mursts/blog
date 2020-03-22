@@ -1,7 +1,4 @@
-application: blog-smiura-jp
-version: 1
-runtime: go
-api_version: go1
+runtime: go113
 
 handlers:
 
@@ -64,17 +61,3 @@ handlers:
 - url: /
   static_files: public/index.html
   upload: public/index.html
-
-
-skip_files:
-
-- ^.idea
-- ^archetypes
-- ^content
-- ^static
-- ^themes
-- ^.git.*
-- ^config.toml
-- ^README.md
-- ^wercker.yml
-- ^Dockerfile

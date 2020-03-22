@@ -1,8 +1,13 @@
+.DS_Store
+.git
+.github
+.gitmodules
 .idea
 archetypes
+config.toml
 content
+layouts
+README.md
+resources
 static
 themes
-.git
-config.toml
-README.md
