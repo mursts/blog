@@ -37,3 +37,10 @@ jobs:
     - name: Deploy to App Engine
       run: |
         gcloud app deploy app.yaml --quiet
+
+    - name: Delete cloud build objetcts
+      run: |
+        gsutil -m rm -r gs://asia.artifacts.${{ secrets.RUN_PROJECT }}.appspot.com/containers
+        gsutil -m rm -r gs://artifacts.${{ secrets.RUN_PROJECT }}.appspot.com/containers
+        gsutil -m rm -r gs://${{ secrets.RUN_PROJECT }}_cloudbuild/source
+
