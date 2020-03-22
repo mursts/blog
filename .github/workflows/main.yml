@@ -40,6 +40,6 @@ jobs:
 
     - name: Delete cloud build objetcts
       run: |
-        gsutil -m rm -r gs://asia.artifacts.${{ secrets.RUN_PROJECT }}.appspot.com/containers
-        gsutil -m rm -r gs://staging.${{ secrets.RUN_PROJECT }}.appspot.com/containers
+        gsutil -m rm -r gs://asia.artifacts.${{ secrets.RUN_PROJECT }}.appspot.com/containers/*
+        gsutil -m rm -r gs://staging.${{ secrets.RUN_PROJECT }}.appspot.com/*
 
