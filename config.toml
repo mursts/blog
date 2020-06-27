@@ -31,7 +31,7 @@ home = ["HTML", "RSS"]
   showtoc = false
 
   # Sidebar settings
-  sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
+  sidebar_about_description = "IT Developer,  GCPUG Nagoya / Python東海 / Google Professional Cloud Developer / Google Associate Cloud Engineer / CKAD"
   #sidebar_avatar = "img/avatar-zhaohuabing.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
   #sidebar_avatar = "img/zhaohuabing.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
