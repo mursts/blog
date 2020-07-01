@@ -8,19 +8,23 @@ title = "about"
 
 ### @mursts <みうら さとし>
 
-愛知で働く派遣プログラマ。Python東海やGCPUG Nagoyaの中の人やってます
+愛知で働く派遣プログラマ。Python東海やGCPUG 名古屋の中の人やってます
 
-* [GitHub](https://github.com/mursts)
 * [Twitter](https://twitter.com/mursts)
-* [Speaker Deck](https://speakerdeck.com/mursts)
+* [GitHub](https://github.com/mursts)
 
 ---
 
-### Python東海
+### コミュニティ活動
 
-* http://connpass.com/series/292/
+- [Python東海](http://connpass.com/series/292/)
+- [GCPUG名古屋](http://gcpug-nagoya.connpass.com/)
 
-### GCPUG
+---
 
-* http://gcpug.jp
-* http://gcpug-nagoya.connpass.com/
+### 資格
+
+- Google Cloud 
+    - Professional Cloud Developer
+    - Assosiate Cloud Engineer
+- Certified Kubernetes Application Developer
