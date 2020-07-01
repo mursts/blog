@@ -53,7 +53,7 @@ home = ["HTML", "RSS"]
 
   [params.social]
   rss            = true 
-  email          = "youremail@gmail.com"
+  #email          = "youremail@gmail.com"
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
   twitter       = "https://twitter.com/mursts"
