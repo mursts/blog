@@ -24,10 +24,14 @@ jobs:
     # Configure gcloud CLI
     - name: gcloud Set up
       run: |
-        echo ${{ secrets.RUN_PROJECT }}
-        echo ${{ secrets.SA_EMAIL }}
-        echo ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+        echo ${{ secrets.RUN_PROJECT }} > p.txt
+        cat p.txt
+        echo ${{ secrets.SA_EMAIL }} > e.txt
+        cat e.txt
+        echo ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }} > c.txt
+        cat c.txt
         gcloud config set project ${{ secrets.RUN_PROJECT }}
+        gcloud config list
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
