@@ -47,6 +47,8 @@ home = ["HTML", "RSS"]
   #bookmarks = false
   about_me = true
 
+  adsence = true
+
   # Include any custom CSS and/or JS files, url or relative to /static folder
   custom_css = ["css/mystyle.css"]
   #custom_js = ["js/lightbox.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js", "js/main.js"]

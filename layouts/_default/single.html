@@ -73,6 +73,14 @@
                     {{ end }}
                 </ul>
 
+                <hr>
+
+                {{ if .Site.Params.adsence }}
+                {{ partial "adsence.html" . }}
+                {{ end }}
+
+                <hr>
+
                 {{ partial "comments.html" . }}
 
             </div>
