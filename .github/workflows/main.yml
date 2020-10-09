@@ -24,6 +24,9 @@ jobs:
     # Configure gcloud CLI
     - name: gcloud Set up
       run: |
+        echo ${{ secrets.RUN_PROJECT }}
+        echo ${{ secrets.SA_EMAIL }}
+        echo ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
         gcloud config set project ${{ secrets.RUN_PROJECT }}
 
     - name: Setup Hugo
