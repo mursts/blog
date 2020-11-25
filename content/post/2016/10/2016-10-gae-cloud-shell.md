@@ -3,7 +3,7 @@ date = "2016-10-09T22:19:52+09:00"
 slug = "gae-cloud-shell"
 title = "Cloud ShellでGAEのHello World"
 tags = [
-  "GCP", "GoogleAppEngine"
+  "GCP", "AppEngine"
 ]
 
 +++

@@ -1,7 +1,7 @@
 +++
 date = "2015-12-06T00:41:44+09:00"
 slug = "custom-domain-for-google-app-engine"
-tags = ["GoogleAppEngine"]
+tags = ["AppEngine"]
 title = "Google App Engineで独自ドメインを設定する"
 
 +++

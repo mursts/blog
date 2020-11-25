@@ -1,7 +1,7 @@
 +++
 date = "2015-12-24T00:36:12+09:00"
 slug = "google-app-engine-logging-debug"
-tags = ["GoogleAppEngine", "Python"]
+tags = ["AppEngine", "Python"]
 title = "Google App EngineでDebugログを出力する"
 
 +++

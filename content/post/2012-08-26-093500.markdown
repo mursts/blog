@@ -4,7 +4,7 @@ title: "Nexus SをFactoryImageで初期化する"
 date: 2012-08-26
 slug: "nexuss-initialize-factoryimage"
 comments: true
-tags: ["NexusS"]
+tags: ["NexusS", "android"]
 ---
 いつもやり方をわすれるのでメモ
 

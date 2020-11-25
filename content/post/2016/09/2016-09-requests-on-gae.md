@@ -1,7 +1,7 @@
 +++
 date = "2016-09-24T23:41:50+09:00"
 slug = "requests-on-gaepy"
-tags = ["googleappengine", "python"]
+tags = ["appengine", "python"]
 title = "GAE/Pyでrequestsを使う"
 +++
 

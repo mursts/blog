@@ -4,7 +4,7 @@ title: "Nexus4を注文した"
 date: 2012-11-14
 slug: "order-nexus4"
 comments: true
-tags: ["Nexus4"]
+tags: ["Nexus4", "android"]
 ---
 先ほど発売されたNexus4を注文しました。
 

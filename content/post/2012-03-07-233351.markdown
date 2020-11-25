@@ -4,7 +4,7 @@ title: "NexusSをrsyncを使ってバックアップ"
 date: 2012-03-07
 slug: "nexuss-rsync-backup"
 comments: true
-tags: ["NexusS"]
+tags: ["NexusS", "android"]
 ---
 使っている携帯(NexusS)はメモリカードが使えないため、バックアップはPCに繋いで手動でコピーしてる。  
 毎度cpコマンドで全ファイルをコピーしていると、同期が取れないのでrsyncを使ってバックアップするようにしました。

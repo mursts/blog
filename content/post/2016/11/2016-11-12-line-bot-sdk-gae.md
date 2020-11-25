@@ -1,7 +1,7 @@
 +++
 title = "GAE/PyとLINE BOT SDKでLINE BOTを作った"
 tags = [
-  "googleappengine", "LINE"
+  "appengine", "LINE"
 ]
 isCJKLanguage = true
 date = "2016-11-12T00:15:06+09:00"
