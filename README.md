@@ -1,3 +1,1 @@
-# [blog.mursts.jp](http://blog.mursts.jp)
-
-![](https://github.com/mursts/blog.smiura.jp/workflows/CI/badge.svg)
+# [blog.mursts.dev](https://blog.mursts.dev)
