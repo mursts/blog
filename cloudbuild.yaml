@@ -1,0 +1,71 @@
+steps:
+# - name: 'gcr.io/cloud-builders/git'
+#   secretEnv: ['SSH_KEY']
+#   entrypoint: 'bash'
+#   args:
+#   - -c
+#   - |
+#     echo "$$SSH_KEY" >> /root/.ssh/id_rsa
+#     chmod 400 /root/.ssh/id_rsa
+#     cp known_hosts.github /root/.ssh/known_hosts
+#   volumes:
+#   - name: 'ssh'
+#     path: /root/.ssh
+
+- id: 'git-submodule-update'
+  name: 'gcr.io/cloud-builders/git'
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    git submodule init
+    git submodule update
+
+# # Clone the repository
+# - name: 'gcr.io/cloud-builders/git'
+#   args:
+#   - clone
+#   - --recurse-submodules
+#   - git@github.com:mursts/blog.mursts.dev
+#   - /src/repo
+#   volumes:
+#   - name: 'ssh'
+#     path: /root/.ssh
+#   - name: 'src'
+#     path: /src
+
+- id: 'Get hugo'
+  name: 'gcr.io/cloud-builders/wget'
+  args:
+  - '--quiet'
+  - '-O'
+  - 'hugo.tar.gz'
+  - 'https://github.com/gohugoio/hugo/releases/download/v${_HUGO_VERSION}/hugo_extended_${_HUGO_VERSION}_Linux-64bit.tar.gz'
+  waitFor: ['-']
+
+- id: 'Generate contents'
+  name: 'ubuntu:18.04'
+  args:
+  - 'bash'
+  - '-c'
+  - |
+    apt-get update
+    apt-get install ca-certificates -y
+    mv hugo.tar.gz /tmp
+    tar -C /tmp -xzf /tmp/hugo.tar.gz
+    /tmp/hugo
+
+- id: 'Deploy to AppEngine'
+  name: gcr.io/cloud-builders/gcloud
+  args: ['app', 'deploy', 'app.yaml']
+
+- id: 'remove files'
+  name: gcr.io/cloud-builders/gsutil
+  args: ['rm', '-r', 'gs://asia.artifacts.$PROJECT_ID.appspot.com/containers/*']
+
+# availableSecrets:
+#   secretManager:
+#   - versionName: projects/mursts-dev/secrets/github-secret-key/versions/latest
+#     env: 'SSH_KEY'
+substitutions:
+  _HUGO_VERSION: 0.84.4
