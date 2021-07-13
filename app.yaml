@@ -1,5 +1,7 @@
 runtime: go115
 
+service: blog
+
 handlers:
 - url: /.*
   script: auto
