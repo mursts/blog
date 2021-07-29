@@ -1,11 +1,12 @@
 ---
-title:       "Pixelbool GoにNeoVimをインストールする"
+title:       "Pixelbook GoにNeoVimをインストールする"
 subtitle:    ""
 description: ""
 date:        2020-07-22
 author:      ""
 image:       ""
 tags:        ["vim", "neovim", "pixelbookgo", "chromebook"]
+slug:        "install-neovim-to-pixcelbook"
 ---
 
 Pixelbook GoのLinux環境にNeoVimの環境を作ったのでやったことの覚書

@@ -3,9 +3,10 @@ title:       "ChromeOSのCrostiniで日本語入力する"
 subtitle:    ""
 description: ""
 date:        2020-08-06
-author:      ""
+author:      ""
 image:       ""
 tags:        ["chromeos", "pixelbookgo"]
+slug:        "setting-mozc-on-chromebook"
 ---
 
 Crostiniではデフォルトでは日本語入力できないのでMozcを導入する  

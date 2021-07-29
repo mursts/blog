@@ -6,7 +6,7 @@ date:        2020-07-09
 author:      ""
 image:       ""
 tags:        ["docker", "chromebook", "pixelbookgo"]
-#categories:  ["Tech" ]
+slug:        "docker-chromebook"
 ---
 
 Pixelbook Goで開発ができるようにDockerの環境を作成する
