@@ -26,7 +26,7 @@ $ sudo pacman -S wine winetricks lib32-gnutls
 
 ## 必要なディレクトリを作成する
 
-{{% tweet "1360561626718474240" %}}
+{{< tweet user="mursts" id="1360561626718474240" >}}
 
 これを作らないと最新版のKindleがエラーで動かなかった。古いバージョンではなくても大丈夫。
 
