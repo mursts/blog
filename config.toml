@@ -3,7 +3,7 @@ languageCode = "en"
 defaultContentLanguage = "en"
 title = ">>Work.log"
 disqusShortname = "worklog"
-googleAnalytics = "UA-39930558-1"
+googleAnalytics = "G-1ZP7D1DVB6"
 theme = "zozo"
 summaryLength = 100
 paginate = 5
@@ -46,7 +46,7 @@ pygmentscodefencesguesssyntax = true
   subTitle = "チラシの裏"
   footerSlogan = ""
   keywords = ["Hugo","theme","zozo"]
-  description = "Hugo theme zozo example site."
+  description = ""
   enableMathJax = true
   enableSummary = false
   mainSections = ["posts","post"]
@@ -56,6 +56,7 @@ pygmentscodefencesguesssyntax = true
 
 [social]
   github = "https://github.com/mursts"
+  mastodon = "https://mstdn.3bit.one/@mursts"
   twitter = "https://twitter.com/mursts"
   instagram = "https://instagram.com/mursts"
 
