@@ -68,4 +68,4 @@ steps:
 #   - versionName: projects/mursts-dev/secrets/github-secret-key/versions/latest
 #     env: 'SSH_KEY'
 substitutions:
-  _HUGO_VERSION: 0.84.4
+  _HUGO_VERSION: 0.111.3
