@@ -57,7 +57,7 @@ steps:
 
 - id: 'Deploy to AppEngine'
   name: gcr.io/cloud-builders/gcloud
-  args: ['app', 'deploy', 'app.yaml']
+  args: ['app', 'deploy', 'app.yaml', '--no-cache']
 
 - id: 'remove files'
   name: gcr.io/cloud-builders/gsutil
